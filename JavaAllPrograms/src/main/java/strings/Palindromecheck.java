@@ -1,7 +1,4 @@
 package strings;
-
-import javax.print.DocFlavor;
-
 public class Palindromecheck {
     public static void main(String[] args)
     {
@@ -25,12 +22,6 @@ public class Palindromecheck {
         StringBuilder sb =new StringBuilder(s1);
         boolean result1=s1.equals(sb.reverse().toString());
         System.out.println(result1);
-
-
-
-
-
-
     }
 
 }
