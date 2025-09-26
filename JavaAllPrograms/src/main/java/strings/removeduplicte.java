@@ -1,7 +1,5 @@
 package strings;
-
 public class removeduplicte {
-
     public static void main(String[] args)
     {
         String s="prasanna";
