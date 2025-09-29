@@ -28,12 +28,37 @@ public class AllinONE {
             Arrays.sort(ch2);
             boolean res=Arrays.equals(ch1,ch2);
             System.out.println(res);
+            //remove duplicates string
+        String k="pooja";
+        System.out.println(removed(k));
 
 
+        //findout string is number
 
-
+        String n="123456";
+        boolean istrue=n.matches("\\d+");
+        System.out.println(istrue);
 
 
 
     }
+
+    public static String removed(String k)
+    {
+        StringBuilder sb =new StringBuilder();
+        char ch[]=k.toCharArray();
+        boolean seen[]=new boolean[256];
+        for(char a:ch)
+        {
+            if(!seen[a])
+            {
+                sb.append(a);
+                seen[a]=true;
+            }
+        }
+        return sb.toString();
+
+    }
+
+
 }
