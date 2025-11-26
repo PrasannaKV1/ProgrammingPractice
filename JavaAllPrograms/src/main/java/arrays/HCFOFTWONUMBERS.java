@@ -9,6 +9,7 @@ public class HCFOFTWONUMBERS {
         int A=sc.nextInt();
         int B=sc.nextInt();
         int max=0;
+        int HCFORGCD=0;
         if(A>B)
         {
             max=A;
@@ -18,6 +19,15 @@ public class HCFOFTWONUMBERS {
         }
 
         System.out.println(max);
+
+        for (int i = max; i>=1 ; i--) {
+            if(A%i==0 && B%i==0)
+            {
+                HCFORGCD=i;
+                break;
+            }
+        }
+        System.out.println(HCFORGCD);
 
     }
 }
