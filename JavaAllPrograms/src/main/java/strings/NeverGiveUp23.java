@@ -10,11 +10,6 @@ public class NeverGiveUp23 {
         Map<Character,Integer> map=new HashMap<>();
         for (char c :s.toCharArray()) {
             map.put(c,map.getOrDefault(c,0)+1);
-            if(map.get(c)>1)
-            {
-                System.out.println(c);
-            }
-
             
         }
         System.out.println(map);
